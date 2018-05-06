@@ -1,0 +1,27 @@
+
+{
+	"_comment": "使用配置文件重启服务",
+
+	"restartable": "rs",
+
+	"_comment": "忽略文件变化而重启服务",
+	"ignore": [
+		".git",
+		"node_modules/**/node_modules",
+		".eslintrc",
+		"client",
+		"build"
+	],
+
+	"_comment": "配置环境",
+	"env": {
+		"NODE_ENV": "development"
+	},
+
+	"_comment": "输出信息更加详细",
+	"verbose": true,
+
+	"_comment": "哪些文件变更需要重启服务",
+	"ext": "js"
+
+}

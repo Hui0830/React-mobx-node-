@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<%%- title %>
+
+	<%%- meta %>
+
+
+	<style id="jss-server-side">
+		<%%- materialCss %>
+	</style>
+</head>
+<body>
+	<div id="root">
+		<%%- appString %>
+	</div>
+	<script>
+		window.__INITIAL__STATE__= <%%- initialState %>
+	</script>
+</body>
+</html>
